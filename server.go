@@ -1,14 +1,14 @@
 package main
 
 import (
-	"html/template"
+	"embed"
 	"net/http"
 )
 
-var tmpl *template.Template
-
+//go:embed index.html
+var indexHTML string
 func main() {
-	tmpl = template.Must(template.ParseFiles("index.html"))
+	tmpl = template.Must(template.New("index").Parse(indexHTML)
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		tmpl.ExecuteTemplate(w, "index.html", nil)
 	})
