@@ -5,3 +5,5 @@ Ripped from @Ropoko. Simple server for browser homepage.
 2. go build
 3. place executable and index.html into startup folder
 4. install extension to point new tabs to localhost:4242
+
+- Original Repo is here https://github.com/ropoko/Startpage
