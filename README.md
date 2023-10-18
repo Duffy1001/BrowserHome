@@ -1,5 +1,5 @@
 # BrowserHome
-Ripped from Ropoko. Simple server for browser homepage.
+Ripped from @Ropoko. Simple server for browser homepage.
 ### Install
 1. pull code.
 2. go build
